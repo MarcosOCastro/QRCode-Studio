@@ -8,11 +8,16 @@ export default defineConfig(() => {
       port: 3000,
       host: '0.0.0.0',
     },
+    publicDir: 'public',
     plugins: [react()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
       }
+    },
+    build: {
+      outDir: 'dist',
+      emptyOutDir: true,
     }
   };
 });

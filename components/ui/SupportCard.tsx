@@ -92,13 +92,13 @@ export function SupportCard({ isDarkMode, className }: SupportCardProps) {
         >
           {/* Logo PIX */}
           <div className="flex justify-center mb-4">
-            <img src="/Assets/Apoio/PIX_Logo.png" alt="PIX Logo" className="h-8 object-contain" />
+            <img src="/PIX_Logo.png" alt="PIX Logo" className="h-8 object-contain" />
           </div>
 
           {/* QR Code */}
           <div className="flex justify-center">
             <img
-              src="/Assets/Apoio/qrcodepix.png"
+              src="/qrcodepix.png"
               alt="QR Code PIX para Doação"
               className="w-48 h-48 rounded-lg"
             />
