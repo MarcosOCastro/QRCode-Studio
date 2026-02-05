@@ -1,0 +1,5 @@
+{
+  "name": "QRCode Studio",
+  "description": "Gerador de QR Code gratuito com suporte a PIX, Wi-Fi, e personalização avançada de design.",
+  "requestFramePermissions": []
+}

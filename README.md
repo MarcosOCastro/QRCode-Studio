@@ -5,11 +5,7 @@ Uma aplicação web moderna, rápida e intuitiva para geração de QR Codes alta
 ### 🌐 Acesse agora: [qrcode.marcosvocastro.com.br](https://qrcode.marcosvocastro.com.br)
 **Disponível gratuitamente e sem limites para testar e usar!**
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="Banner do Projeto" width="100%" />
-</div>
-
-## ✨ Funcionalidades Principais
+## ✨ Funcionalidades Principais:
 
 ### 📥 Tipos de Conteúdo Suportados
 O gerador está preparado para os formatos mais utilizados no mercado:

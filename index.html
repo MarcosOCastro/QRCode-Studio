@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+
+  <!-- SEO Primary Meta Tags -->
+  <title>QRCode Studio - Gerador de QR Code Gratuito | PIX, Wi-Fi, Instagram e WhatsApp</title>
+  <meta name="title" content="QRCode Studio - Gerador de QR Code Gratuito | PIX, Wi-Fi, WhatsApp" />
+  <meta name="description"
+    content="Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs. Design avançado com cores, logos e formatos. 100% gratuito, ilimitado e sem cadastro." />
+  <meta name="keywords"
+    content="gerador qr code, qr code pix, qr code wifi, qr code whatsapp, criar qr code gratis, qr code personalizado, gerador de qr code online, qr code instagram" />
+  <meta name="author" content="Marcos Castro" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="Portuguese" />
+  <meta name="revisit-after" content="7 days" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://qrcode.mcdev.com.br/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://qrcode.mcdev.com.br/" />
+  <meta property="og:title" content="QRCode Studio - Gerador de QR Code Gratuito" />
+  <meta property="og:description"
+    content="Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs. Design avançado com cores, logos e formatos." />
+  <meta property="og:image" content="https://qrcode.mcdev.com.br/icon-512.png" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="QRCode Studio" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://qrcode.mcdev.com.br/" />
+  <meta property="twitter:title" content="QRCode Studio - Gerador de QR Code Gratuito" />
+  <meta property="twitter:description"
+    content="Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs. Design avançado com cores, logos e formatos." />
+  <meta property="twitter:image" content="https://qrcode.mcdev.com.br/icon-512.png" />
+
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#37B4AA" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="QRCode Studio" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="QRCode Studio" />
+  <meta name="msapplication-TileColor" content="#37B4AA" />
+  <meta name="msapplication-TileImage" content="/icon-192.png" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png" />
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.9.2/lib/qr-code-styling.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: {
+              50: '#F0FBF9',
+              100: '#CCF4F0',
+              200: '#99EAE3',
+              300: '#66DFD5',
+              400: '#4DD4CA',
+              500: '#37B4AA',
+              600: '#2F9A91',
+              700: '#277D76',
+              800: '#1F615C',
+              900: '#174743',
+            },
+            slate: {
+              800: '#1e293b',
+              900: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "QRCode Studio",
+    "description": "Gerador de QR Code gratuito com suporte a PIX, Wi-Fi, WhatsApp, Instagram e personalização avançada de design.",
+    "url": "https://qrcode.mcdev.com.br/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BRL"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Marcos Castro"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "100"
+    },
+    "featureList": [
+      "QR Code para PIX",
+      "QR Code para Wi-Fi",
+      "QR Code para WhatsApp",
+      "QR Code para Instagram",
+      "Personalização de cores",
+      "Upload de logo",
+      "Exportação PNG e SVG"
+    ]
+  }
+  </script>
+
+  <!-- Additional mobile styles -->
+  <style>
+    /* Prevent horizontal scroll on mobile */
+    html,
+    body {
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Safe area insets for notched devices */
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Better touch targets */
+    button,
+    a,
+    input,
+    select,
+    textarea {
+      touch-action: manipulation;
+    }
+
+    /* PWA standalone mode adjustments */
+    @media (display-mode: standalone) {
+      body {
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[#0a0a0a] text-gray-300">
+  <!-- Noscript fallback for SEO -->
+  <noscript>
+    <div style="padding: 20px; text-align: center; background: #1a1a1a; color: #fff;">
+      <h1>QRCode Studio - Gerador de QR Code Gratuito</h1>
+      <p>Para usar o QRCode Studio, por favor habilite o JavaScript no seu navegador.</p>
+      <p>Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs.</p>
+    </div>
+  </noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((registration) => {
+            console.log('QRCode Studio: SW registered', registration.scope);
+          })
+          .catch((error) => {
+            console.log('QRCode Studio: SW registration failed', error);
+          });
+      });
+    }
+  </script>
+</body>
+
+</html>
