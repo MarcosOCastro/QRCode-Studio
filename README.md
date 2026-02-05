@@ -2,7 +2,7 @@
 
 Uma aplicação web moderna, rápida e intuitiva para geração de QR Codes altamente personalizáveis.
 
-### 🌐 Acesse agora: [qrcode.marcosvocastro.com.br](https://qrcode.marcosvocastro.com.br)
+### 🌐 Acesse agora: [qrcode.marcosocastro.com.br](https://qrcode.marcosocastro.com.br)
 **Disponível gratuitamente e sem limites para testar e usar!**
 
 ## ✨ Funcionalidades Principais:
