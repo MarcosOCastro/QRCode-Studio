@@ -388,8 +388,8 @@ export default function App() {
                 isDarkMode={isDarkMode}
               />
 
-              {/* Upload de logo (só aparece se não houver logo e não for PIX) */}
-              {!design.image && content.type !== 'pix' && (
+              {/* Upload de logo (não aparece para PIX) */}
+              {content.type !== 'pix' && (
                 <LogoSettings
                   design={design}
                   setDesign={setDesign}

@@ -120,7 +120,7 @@ export function ContentSettings({
     >
       <div className="space-y-6">
         {/* Seleção do tipo de conteúdo (Tabs originais) */}
-        <div className={`flex flex-wrap border-b ${isDarkMode ? 'border-[#2a2a2a]' : 'border-gray-200'}`}>
+        <div className={`flex flex-wrap gap-2 p-1 rounded-xl ${isDarkMode ? 'bg-[#1a1a1a]' : 'bg-gray-100'}`}>
           {contentTypes.map((type) => (
             <button
               key={type.value}
@@ -130,9 +130,9 @@ export function ContentSettings({
                   setDesign(prev => ({ ...prev, image: undefined }));
                 }
               }}
-              className={`flex items-center gap-2 px-4 py-3 text-sm font-medium transition-colors border-b-2 ${content.type === type.value
-                ? `border-emerald-500 ${isDarkMode ? 'text-emerald-400 bg-[#252525]' : 'text-emerald-600 bg-emerald-50'}`
-                : `${isDarkMode ? 'border-transparent text-gray-300 hover:text-emerald-400 hover:bg-[#1a1a1a]' : 'border-transparent text-gray-600 hover:text-emerald-600 hover:bg-gray-100'}`
+              className={`flex items-center gap-2 px-4 py-2.5 text-sm font-medium rounded-lg transition-all duration-300 ${content.type === type.value
+                ? `bg-emerald-500 text-white shadow-lg shadow-emerald-500/25`
+                : `${isDarkMode ? 'text-gray-400 hover:text-emerald-400 hover:bg-[#252525]' : 'text-gray-600 hover:text-emerald-600 hover:bg-white'}`
                 }`}
             >
               {type.icon}

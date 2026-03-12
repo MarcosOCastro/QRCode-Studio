@@ -26,7 +26,7 @@
   <meta property="og:title" content="QRCode Studio - Gerador de QR Code Gratuito" />
   <meta property="og:description"
     content="Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs. Design avançado com cores, logos e formatos." />
-  <meta property="og:image" content="https://qrcode.mcdev.com.br/icon-512.png" />
+  <meta property="og:image" content="https://qrcode.mcdev.com.br/logo.png" />
   <meta property="og:locale" content="pt_BR" />
   <meta property="og:site_name" content="QRCode Studio" />
 
@@ -36,7 +36,7 @@
   <meta property="twitter:title" content="QRCode Studio - Gerador de QR Code Gratuito" />
   <meta property="twitter:description"
     content="Crie QR Codes personalizados grátis para PIX, Wi-Fi, WhatsApp, Instagram e URLs. Design avançado com cores, logos e formatos." />
-  <meta property="twitter:image" content="https://qrcode.mcdev.com.br/icon-512.png" />
+  <meta property="twitter:image" content="https://qrcode.mcdev.com.br/logo.png" />
 
   <!-- PWA Meta Tags -->
   <meta name="theme-color" content="#37B4AA" />
@@ -46,7 +46,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="application-name" content="QRCode Studio" />
   <meta name="msapplication-TileColor" content="#37B4AA" />
-  <meta name="msapplication-TileImage" content="/icon-192.png" />
+  <meta name="msapplication-TileImage" content="/logo.png" />
   <meta name="msapplication-tap-highlight" content="no" />
   <meta name="format-detection" content="telephone=no" />
 
@@ -54,10 +54,10 @@
   <link rel="manifest" href="/manifest.json" />
 
   <!-- Icons -->
-  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
-  <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png" />
-  <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/logo.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="/logo.png" />
+  <link rel="apple-touch-icon" sizes="512x512" href="/logo.png" />
 
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com" />
@@ -192,6 +192,22 @@
         navigator.serviceWorker.register('/sw.js')
           .then((registration) => {
             console.log('QRCode Studio: SW registered', registration.scope);
+            
+            // Check for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              if (newWorker) {
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    // New version available
+                    if (confirm('Nova versão disponível! Deseja atualizar?')) {
+                      newWorker.postMessage({ type: 'SKIP_WAITING' });
+                      window.location.reload();
+                    }
+                  }
+                });
+              }
+            });
           })
           .catch((error) => {
             console.log('QRCode Studio: SW registration failed', error);
