@@ -22,7 +22,7 @@ interface WhatsAppContentProps {
 }
 
 export function WhatsAppContent({ content, setContent, design, setDesign, validationErrors, showValidation, isDarkMode }: WhatsAppContentProps) {
-  const WHATSAPP_LOGO = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png';
+  const WHATSAPP_LOGO = '/whatsapp-logo.png';
   const phoneError = validationErrors.find(e => e.field === 'phone')?.message;
 
   return (

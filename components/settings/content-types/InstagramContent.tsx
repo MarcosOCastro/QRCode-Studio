@@ -21,7 +21,7 @@ interface InstagramContentProps {
 }
 
 export function InstagramContent({ content, setContent, design, setDesign, validationErrors, showValidation, isDarkMode }: InstagramContentProps) {
-  const INSTAGRAM_LOGO = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png';
+  const INSTAGRAM_LOGO = '/instagram-logo.png';
   const usernameError = validationErrors.find(e => e.field === 'instagram')?.message;
 
   return (

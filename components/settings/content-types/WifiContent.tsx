@@ -19,7 +19,7 @@ interface WifiContentProps {
 }
 
 export function WifiContent({ content, setContent, design, setDesign, isDarkMode }: WifiContentProps) {
-  const WIFI_LOGO = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/WiFi_Logo.svg/1024px-WiFi_Logo.svg.png';
+  const WIFI_LOGO = '/wifi-logo.png';
 
   return (
     <div className="space-y-4">
